@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Shady Corner Cafe</title>
+    </head>
+    <body>
+        <h1>Shady Corner Cafe</h1>
+        <section>
+            <div>
+                ~ Relax with a nice cup of coffee and a good conversation ~
+            </div>
+            <table>
+                <thead>
+                    <th colspan="6">Drinks Menu</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Item</th>
+                        <th>Medium </th>
+                        <th>Large</th>
+                    </tr>
+                    <tr>
+                        <th>Americano </th>
+                        <td>$2.50</td>
+                        <td>$3</td>
+                    </tr>
+                    <tr>
+                        <th>Latte</th>
+                        <td>$3</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <th>Espresso</th>
+                        <td>$2</td>
+                        <td>$3.40</td>
+                    </tr>
+                    <tr>
+                        <th>Macchiato</th>
+                        <td>$2.70</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <th>Hot Tea</th>
+                        <td>$2.50</td>
+                        <td>$3</td>
+                    </tr>
+                    <tr>
+                        <th>Frappe</th>
+                        <td>$3.50</td>
+                        <td>$4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                   <th colspan="6">Tasty Treats</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>French Toast</td>
+                        <td>$5</td>
+                    </tr>
+                    <tr>
+                        <td>Blueberry Pancakes</td>
+                        <td>$6</td>
+                    </tr>
+                    <tr>
+                        <td>Ham & Cheese sandwich</td>
+                        <td>$4</td>
+                    </tr>
+                    <tr>
+                        <td>Panini - turkey/chicken</td>
+                        <td>$7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Submit Your Review</h2>
+            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+                <label for="name">Your Name: </label>
+                <input type="text" name="name" id="name"/>
+            </form>
+            <textarea  name="text" rows="4" cols="20"></textarea>
+            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+                <label for="rating">Your Rating: </label>
+                <input type="range" name="range"/>
+            </form>
+            <form>
+                <label for="faveitem">Choose Your Favorite Item</label>
+                <select id="faveitem" name="item" multiple size="3">
+                    <optgroup label="Drinks">
+                    <option value="Americano">Americano</option>
+                    <option value="Latte">Latte</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="Macchiato">Macchiato</option>
+                    <option value="Hot Tea">Hot Tea</option>
+                    <option vlaue="Frappe">Frappe</option>
+                    </optgroup>
+                    <optgroup label="Tasty Treats">
+                        <option value="French Toast">French Toast</option>
+                        <option vlaue="Blueberry Pancakes">Blueberry Pancakes</option>
+                        <option value="Ham & Cheese sandwich">Ham & Cheese sandwich</option>
+                        <option value="Panini">Panini</option>
+                    </optgroup>
+                </select>
+            </form>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Tel: <a href="234-567-8901">234-567-8901</a></p>
+            <p>Email: <a href="email:shadycornercafe@gmail.com">shadycornercafe@gmail.com</a></p> 
+            <address>
+                1234 Shade Ave<br/>
+                Happy Town<br/>
+                USA
+            </address>
+        </section>
+    </body>
+</html>
