@@ -1,0 +1,91 @@
+body {
+    background: url("images/shade-table.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 5px;
+}
+ table {
+     text-align: left;
+     width: 50%;
+     border: 3px solid rgb(31, 150, 31);
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5px;
+     background-color: rgba(248, 243, 195, 0.705);
+ }
+  h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.8rem;
+      color:rgb(31, 150, 31);
+      text-shadow: 4px 4px rgb(69, 70, 68);
+  }
+
+  #moto {
+      font-family: cursive;
+      font-size: 1.4rem;
+      margin: 10px;
+      font-weight: bold;
+      color:rgb(13, 9, 247)
+      
+  }
+
+  .menu-headings {
+      text-decoration: underline;
+      font-size: 1.3rem;
+      text-align: center;
+  }
+
+  .menu-subheadings {
+      color:rgb(13, 9, 247);
+      font-weight: bolder;
+  }
+
+  .bold {
+      font-weight: bold;
+  }
+
+  input[type="submit"] {
+      background-color:rgb(13, 9, 247) ;
+      color: white;
+      padding: 5px;
+      border-radius: 3px;
+      margin:auto;
+      display: block;
+  }
+  section>h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.9rem;
+      color: rgb(13, 9, 247);
+  }
+   textarea {
+       display: block;
+       margin:auto;
+   }
+
+   input[name="name"]{
+       margin-bottom: 5px;
+   }
+
+   form>label {
+       display: block;
+       padding: 5px;
+       
+   }
+   #faveitem {
+       margin-bottom: 5px;
+   }
+
+   label {
+       font-weight: bold;
+   }
+
+   .review-and-footer {
+       background-color:rgba(248, 243, 195, 0.705) ;
+       width: 50%;
+       margin:auto;
+   }
